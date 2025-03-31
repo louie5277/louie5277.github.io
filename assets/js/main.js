@@ -262,4 +262,27 @@
 				$window.trigger('resize');
 			});
 
+// for toggling of dark mode
+const toggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Log to check if script is running
+console.log("Script loaded");
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-mode");
+}
+
+// Toggle theme functionality
+toggleButton.addEventListener("click", () => {
+  console.log("Button clicked");  // Log to check if button click is detected
+  body.classList.toggle("dark-mode");
+
+  if (body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+});
+
 })(jQuery);

@@ -25,13 +25,39 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+
+/* Light theme (default) */
+:root {
+	--bg-color: #ffffff;
+	--text-color: #000000;
+  }
+  
+  /* Dark theme */
+  .dark-mode {
+	--bg-color: #1a1a1a;
+	--text-color: #ffffff;
+  }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
 	line-height: 1;
+
 }
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+section {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color 0.3s, color 0.3s;
+  }
 
 ol, ul {
 	list-style: none;
@@ -106,6 +132,7 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
 
 /* Spinner */
 
