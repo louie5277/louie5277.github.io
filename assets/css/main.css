@@ -2358,8 +2358,8 @@ input, select, textarea {
 		background-position: top left, center center;
 	}
 	#two .content {
-		flex: 1;
-		padding-right: 20px;
+		position: relative;
+		padding: 20px;
 	}
 	#two .image-box {
 		max-width: 40%; /* Adjust the image width */
