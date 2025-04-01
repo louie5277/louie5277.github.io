@@ -2349,10 +2349,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
