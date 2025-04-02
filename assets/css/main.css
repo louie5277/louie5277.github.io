@@ -1496,6 +1496,14 @@ input, select, textarea {
 				display: block;
 			}
 
+			.gallery article img {
+				width: 100%;           /* makes the image fill the article */
+				height: 300px;         /* you can adjust this to whatever height you want */
+				object-fit: cover;     /* crops excess but keeps proportions */
+				border-radius: 8px;    /* optional: soft corners */
+			}
+			
+
 			.gallery article:nth-last-child(1n) {
 				-moz-transition-delay: 0.05s;
 				-webkit-transition-delay: 0.05s;
