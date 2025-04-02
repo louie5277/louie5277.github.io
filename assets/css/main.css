@@ -2330,7 +2330,7 @@ input, select, textarea {
 }
 
 #one .image-container img {
-    width: 700px;  /* Adjust size */
+    width: 600px;  /* Adjust size */
     height: auto;
     border-radius: 8px;  /* Optional: rounded corners */
 }
